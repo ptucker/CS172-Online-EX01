@@ -34,9 +34,11 @@ void ex02(){
     if (x>y){
         cout<<"x is greater than y"<<endl;
     }
+    //PT: use else if here
     if (x<y){
         cout<<"x is not greater than y"<<endl;
     }
+    //PT: and you can just use else here
     if (x==y){
         cout<<"x is equal to y"<<endl;
     }
@@ -51,6 +53,8 @@ void ex02(){
         cout<<numberOfShares<<" is not less than 100"<<endl;
     }
     
+    //PT: naming your variables more carefully will help here
+    //PT: int boxwidth, bookwidth
     int input1;
     int input2;
     cout<<"Enter a box width: ";
@@ -86,6 +90,7 @@ void ex03(){
     value1 = pow(input5+input5,0.5);
     cout<<"The length of the diagonal of the square with area "<<input5<<" is "<<value1;
     char input6;
+    //PT: clearly!
     cout<<"\nIs Josiah super cool? Enter \"y\" for yes or \"n\" for no (HINT: The answer is yes): ";
     cin>>input6;
     if (input6=='y'){
@@ -94,9 +99,11 @@ void ex03(){
     if (input6=='n'){
         cout<<"You chose NO! You're wrong, but ok.";
     }
+    //PT: char tab = '\t'; -4
     char tab = ' ';
     string mailingAddress;
     cout<<"Enter a mailing address: ";
+    //PT: getline(cin, mailingAddress); //so you can get multiple words -4
     cin>>mailingAddress;
     string empty = "";
 }
@@ -116,6 +123,7 @@ void ex04(){
     while(true){
         cout<<"\nEnter a number between 1 and 10: ";
         cin>>input7;
+        //PT: input7 >= 1 && input7 <= 10) -2
         if (input7>1 && input7<10){
             cout<<"Good Job!"<<endl;
             break;
